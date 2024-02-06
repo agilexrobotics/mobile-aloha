@@ -57,7 +57,9 @@ sys.path.append("./")
 修改aloha_scripts/constants.py文件中TASK_CONFIGS参数即可
 ~~~
 
-+ 数据集格式  每个数据步-数据
+#  数据集格式  
+
++ TimeStep、action
 
 ~~~python
 image_dict = dict()
