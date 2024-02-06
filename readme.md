@@ -3,12 +3,13 @@
 
 A Low-cost Open-source Hardware System for Bimanual Teleoperation
 
-# ENV
+# 1 ENV
 
-1. [ACT环境配置](doc/env.md)
-2. 默认ubuntu20.04，ros1-noetic版本, python3.8, torch-1.11.0+cu113
+1. 默认ubuntu20.04，ros1-noetic版本, python3.8, torch-1.11.0+cu113
+2. [ACT环境配置](doc/env.md)
+3. [机械臂环境配置](https://github.com/agilexrobotics/mobile-aloha/blob/devel/aloha-ros-dev/readme.md)
 
-# 1 生成自定义数据集
+# 2 生成自定义数据集
 
 ~~~python
 # 1 启动roscore
@@ -24,19 +25,19 @@ python scripts/record_data.py --task_name aloha_mobile_dummy --max_timesteps 500
 python scripts/visualize_episodes.py --episode_idx 0
 ~~~
 
-# 2 训练
+# 3 训练
 ~~~python
 python act/train.py --task_name aloha_mobile_dummy --ckpt_dir ckpt --chunk_size 30
 ~~~
 
-# 3 推理
+# 4 推理
 + 只启动从臂
 ~~~python
 python act/inference.py --ckpt_dir ckpt --task_name aloha_mobile_dummy
 ~~~
 
 
-# 4 报错汇总
+# 5 报错汇总
 
 ~~~python
 # 1 ModuleNotFoundError: No module named 'aloha_scripts'
@@ -57,7 +58,7 @@ sys.path.append("./")
 修改aloha_scripts/constants.py文件中TASK_CONFIGS参数即可
 ~~~
 
-#  数据集格式  
+# 6 数据集格式  
 
 + TimeStep、action
 

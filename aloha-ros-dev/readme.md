@@ -165,11 +165,14 @@ rosbag record -o test.bag /camera1/color/image_raw /camera2/color/image_raw /cam
 + 结束当前回合按`ctrl +c` 即可
 
 ~~~python
-# 1 不带底盘topic,采集压缩图像格式ros-CompressedImage
-python scripts/record_data.py --img_compressed --frequency 25 --max_timesteps 500 --episode_idx 0
+# 1 启动roscore
+roscore
 
-# 2 带底盘, 图像非压缩格式
-python scripts/record_data.py --use_base_robot --frequency 25 --max_timesteps 300 --episode_idx 0
+# 2 采集数据
+## 2.1 进入aloha-ros-dev目录
+cd aloha-ros-dev
+## 2.2 采集数据
+python scripts/record_data.py --task_name aloha_mobile_dummy --max_timesteps 500 --dataset_dir ./data --episode_idx 0
 ~~~
 
 4. 可视化数据
