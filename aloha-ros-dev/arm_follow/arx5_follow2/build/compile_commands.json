@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -w -w -std=c++11 -o CMakeFiles/arm2.dir/src/arx_5v.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/arx_5v.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/arx_5v.cpp"
+},
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -Darm_control_EXPORTS -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -fPIC   -w -w -std=c++11 -o CMakeFiles/arm_control.dir/src/App/arm_control.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/App/arm_control.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/App/arm_control.cpp"
+},
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -Darm_control_EXPORTS -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -fPIC   -w -w -std=c++11 -o CMakeFiles/arm_control.dir/src/Hardware/math_ops.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/math_ops.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/math_ops.cpp"
+},
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -Darm_control_EXPORTS -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -fPIC   -w -w -std=c++11 -o CMakeFiles/arm_control.dir/src/Hardware/motor.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/motor.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/motor.cpp"
+},
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -Darm_control_EXPORTS -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -fPIC   -w -w -std=c++11 -o CMakeFiles/arm_control.dir/src/Hardware/teleop.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/teleop.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/Hardware/teleop.cpp"
+},
+{
+  "directory": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/build/arm_control",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arm_control\\\" -Darm_control_EXPORTS -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/devel/include -I/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -fPIC   -w -w -std=c++11 -o CMakeFiles/arm_control.dir/src/utility.cpp.o -c /home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/utility.cpp",
+  "file": "/home/lin/aloha-ros-dev/arm_follow/arx5_follow2/src/arm_control/src/utility.cpp"
+}
+]

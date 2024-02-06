@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="arm2" pkg="arm_control" type="arm2">
+  <param name="Kp" type="double" value="7.1" />
+</node>
+\endverbatim
+

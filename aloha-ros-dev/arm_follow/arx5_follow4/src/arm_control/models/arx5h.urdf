@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="arx5h">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-0.000486634259278163 0.000360033770133179 0.0222768002593161" rpy="0 0 0"/>
+            <mass value="0.337016737909863"/>
+            <inertia ixx="0.00014" ixy="0.00000" ixz="0.00000" iyy="0.00015" iyz="0.00000" izz="0.00024"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/base_link.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/base_link.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="link1">
+        <inertial>
+            <origin xyz="0.00597561920788214 -0.0217618299028684 0.0164351505582028" rpy="0 0 0"/>
+            <mass value="0.0688272362662704"/>
+            <inertia ixx="0.00004" ixy="-0.00001" ixz="0.00001" iyy="0.00003" iyz="-0.00001" izz="0.00003"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link1.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.196078431372549 0.196078431372549 0.196078431372549 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link1.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0.0365" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+    <link name="link2">
+        <inertial>
+            <origin xyz="-0.088064782399538 0.000419783088687122 -3.34744492525574E-05" rpy="0 0 0"/>
+            <mass value="0.998121435591002"/>
+            <inertia ixx="0.00040" ixy="0.00003" ixz="0.00000" iyy="0.00774" iyz="0.00000" izz="0.00774"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link2.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link2.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint2" type="revolute">
+        <origin xyz="0.025 -0.001 0.045" rpy="0 0 0"/>
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+    <link name="link3">
+        <inertial>
+            <origin xyz="0.151086259629818 -0.00189544408002018 -0.0565994946927411" rpy="0 0 0"/>
+            <mass value="0.504329584306991"/>
+            <inertia ixx="0.00036" ixy="-0.00002" ixz="-0.00025" iyy="0.00275" iyz="0.00000" izz="0.00267"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link3.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link3.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint3" type="revolute">
+        <origin xyz="-0.18 0 0" rpy="-3.1416 0 0"/>
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+    <link name="link4">
+        <inertial>
+            <origin xyz="0.0386923753949507 0.00324198364286094 -0.0356092133475593" rpy="0 0 0"/>
+            <mass value="0.0847757133298183"/>
+            <inertia ixx="0.00014" ixy="-0.00001" ixz="-0.00006" iyy="0.00017" iyz="0.00001" izz="0.00010"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link4.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link4.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint4" type="revolute">
+        <origin xyz="0.2 -0.001 -0.06" rpy="0 0 0"/>
+        <parent link="link3"/>
+        <child link="link4"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+    <link name="link5">
+        <inertial>
+            <origin xyz="0.00327200646050166 -4.81918264602186E-05 0.053849347944321" rpy="0 0 0"/>
+            <mass value="0.613669058846029"/>
+            <inertia ixx="0.00076" ixy="0.00000" ixz="0.00005" iyy="0.00074" iyz="0.00000" izz="0.00022"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link5.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link5.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint5" type="revolute">
+        <origin xyz="0.06575 0 -0.084" rpy="0 0 0"/>
+        <parent link="link4"/>
+        <child link="link5"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+    <link name="link6">
+        <inertial>
+            <origin xyz="0.0448793011831319 1.38568355239933E-05 0.000218664938590046" rpy="0 0 0"/>
+            <mass value="0.381000"/>
+            <inertia ixx="0.00044" ixy="0.00000" ixz="0.00000" iyy="0.00031" iyz="-0.00001" izz="0.00063"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link6.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://arx5h/meshes/link6.STL"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint6" type="revolute">
+        <origin xyz="0.03045 0 0.084" rpy="-3.1416 0 0"/>
+        <parent link="link5"/>
+        <child link="link6"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-10" upper="10" effort="100" velocity="1000"/>
+    </joint>
+</robot>

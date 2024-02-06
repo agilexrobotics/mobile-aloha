@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- <param name="/use_sim_time" value="true" /> -->
+    <arg name="reconfigure" default="false" />
+
+    <node if="$(arg reconfigure)" name="configure" pkg="rqt_reconfigure" type="rqt_reconfigure"> </node>
+    <node name="arm2" pkg="arm_control" type="arm2" respawn="true" output="screen"> </node>
+
+</launch>

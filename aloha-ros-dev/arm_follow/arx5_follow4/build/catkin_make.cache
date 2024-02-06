@@ -1,0 +1,2 @@
+arm_control
+-DCATKIN_DEVEL_PREFIX=/home/lin/aloha-ros-dev/arm_follow/arx5_follow4/devel -DCMAKE_INSTALL_PREFIX=/home/lin/aloha-ros-dev/arm_follow/arx5_follow4/install -G Unix Makefiles

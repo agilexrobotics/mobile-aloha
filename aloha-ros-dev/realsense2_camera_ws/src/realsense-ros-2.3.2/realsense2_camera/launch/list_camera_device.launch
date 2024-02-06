@@ -1,0 +1,3 @@
+<launch>
+    <node name="list_camera_device" pkg="realsense2_camera" type="list_camera_device" output="screen"> </node>
+</launch>

@@ -1,0 +1,9 @@
+h5py=3.8.0
+#dm_env=1.6
+collections
+argparse
+tqdm=4.66.1
+rospkg
+opencv-python
+pyyaml
+numpy=1.23.4

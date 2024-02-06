@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>arm_control</name>
+  <version>0.0.0</version>
+  <description>The arm_control package</description>
+  <maintainer email="arx@todo.todo">arx</maintainer>
+  <license>TODO</license>
+
+  <!-- Build tool dependency -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>kdl_parser</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>message_generation</build_depend> <!-- For custom messages -->
+
+  <!-- Build export dependencies -->
+  <build_export_depend>dynamic_reconfigure</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>kdl_parser</build_export_depend>
+  <build_export_depend>message_runtime</build_export_depend> <!-- For custom messages -->
+
+  <!-- Exec dependencies -->
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>kdl_parser</exec_depend>
+  <exec_depend>message_runtime</exec_depend> <!-- For custom messages -->
+
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>
